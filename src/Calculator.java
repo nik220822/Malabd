@@ -5,8 +5,8 @@ public class Calculator {
     BinaryOperator<Integer> plus = (x, y) -> x + y;
     BinaryOperator<Integer> minus = (x, y) -> x - y;
     BinaryOperator<Integer> multiply = (x, y) -> x * y;
-    BinaryOperator<Integer> devide = (x, y) -> y != 0 ? x / y : 0;
-//    BinaryOperator<Integer> devide = (x, y) -> {
+    BinaryOperator<Integer> devide = (x, y) -> y != 0 ? x / y : Integer.MAX_VALUE;
+//        BinaryOperator<Integer> devide = (x, y) -> {
 //        System.out.println("Делить на нуль нельзя");
 //        return 0;
 //    };
